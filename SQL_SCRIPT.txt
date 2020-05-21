@@ -1,0 +1,34 @@
+1> Authentication table
+--------------------------------------------------------
+create table account_opening_auth_tab(
+    user_id varchar(20) not null,
+    user_name varchar(100) not null,
+    password varchar(100) not null,
+    roles varchar(50) not null,
+    active varchar(5) not null,
+    updated_by varchar(100) not null,
+    updated_no date not null,
+    primary key(user_name)
+);
+
+insert into account_opening_auth_tab values ('BNS_101','bnssop','bnssop','ROLE_USER','Y','makwameh',sysdate);
+
+
+
+2> Registration table
+
+create table Account_Opening_Reg_Info_Tab(
+account_Opening_Reg_Info_id varchar2(10) primary key,
+first_Name varchar2(100) not null,
+sur_Name varchar2(100) not null,
+reg_position varchar2(50) not null,
+reg_Pharmacy_Name varchar2(100) not null,
+reg_Contact_No_type varchar2(20) not null,
+reg_Contact_No  varchar2(12) not null,
+reg_WebSite varchar2(50) ,
+reg_Email_Address varchar2(50) not null,
+reg_Password varchar2(50) not null,
+reg_term_Condition varchar2(10) not null,
+reg_create_date date not null,
+reg_update_date date 
+);

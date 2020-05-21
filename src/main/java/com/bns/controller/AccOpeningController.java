@@ -1,0 +1,18 @@
+package com.bns.controller;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@CrossOrigin
+public class AccOpeningController {
+	
+	@PostMapping("/accOpeningForm")
+	 public String accOpeningForm() {
+        return "Welcome!";
+    }
+    
+	
+	
+}
